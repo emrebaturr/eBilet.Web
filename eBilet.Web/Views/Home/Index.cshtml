@@ -1,0 +1,135 @@
+﻿@model eBilet.Entity.Flight
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="jumbotron mb-3">
+    <div class="container">
+        <img src="~/img/Banner.png" class="card-img-top" alt="...">
+        <hr class="my-4">
+    </div>
+</div>
+
+<div class="container form-group">
+    <form method="post" asp-controller="Ucus" asp-action="List">
+        <div class="border">
+            <div class="row m-2">
+                <div class="col-md-3">
+                    <div class="form-floating">
+                        <select asp-for="WhereFrom" class="form-select" id="floatingSelectGrid1">
+                            <option selected>Seçiniz..</option>
+                            <option value="34">İstanbul</option>
+                            <option value="6">Ankara</option>
+                            <option value="35">İzmir</option>
+                            <option value="1">Adana</option>
+                            <option value="16">Bursa</option>
+                            <option value="7">Antalya</option>
+
+                        </select>
+                        <label for="floatingSelectGrid1">Nereden</label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-floating">
+                        <select asp-for="ToWhere" class="form-select" id="floatingSelectGrid2">
+                            <option selected>Seçiniz..</option>
+                            <option value="34">İstanbul</option>
+                            <option value="6">Ankara</option>
+                            <option value="35">İzmir</option>
+                            <option value="1">Adana</option>
+                            <option value="16">Bursa</option>
+                            <option value="7">Antalya</option>
+                        </select>
+                        <label for="floatingSelectGrid2">Nereye</label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="datepicker relative form-floating">
+                        <input asp-for="DepartureDate" id="GidisTarih" type="text" class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none form-icon-trailing" placeholder="Select a date">
+                        <label for="floatingInput" class="text-gray-700">Gidiş Tarihi</label>
+                        <button id="datepicker-toggle-607696" type="button" class="datepicker-toggle-button" data-mdb-toggle="datepicker">
+                            <i class="far fa-calendar datepicker-toggle-icon"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <input type="submit" class="bg-blue-500 text-white rounded hover:bg-blue-700 font-semibold" style="width:100%;height:100%" value="Uçuş Ara" />
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="container mt-3">
+    <div class="row m-1">
+        <div class="col-md-3">
+            <div class="card">
+                <img src="~/img/ankara.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <strong>ANKARA</strong>
+                            </div>
+                            <div class="col-md-8">
+                                419.99 TL'den Başlayan Fiyatlarla
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="~/img/izmir.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <strong>İZMİR</strong>
+                            </div>
+                            <div class="col-md-8">
+                                419.99 TL'den Başlayan Fiyatlarla
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="~/img/antalya.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <strong>ANTALYA</strong>
+                            </div>
+                            <div class="col-md-8">
+                                759.99 TL'den Başlayan Fiyatlarla
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <img src="~/img/lefkosa.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <strong>KIBRIS</strong>
+                            </div>
+                            <div class="col-md-8">
+                                34.99 USD'den Başlayan Fiyatlarla
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

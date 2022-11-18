@@ -1,0 +1,83 @@
+﻿body {
+}
+
+/*.availability-list-item {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+}
+
+.item-content {
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;*/
+    /*height: -webkit-max-content;
+    height: -moz-max-content;*/
+    /*height: max-content;
+    color: #323a47;
+    text-align: left;
+    background-color: #fff;*/
+    /*-webkit-box-shadow: 0 4px 8px 0 rgb(0 0 0 / 8%);*/
+    /*box-shadow: 0 4px 8px 0 rgb(0 0 0 / 8%);
+}
+
+.flight-info-row {*/
+    /*display: -webkit-box;*/
+    /*display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 80px;
+    padding-top: 12px;
+}
+
+.availability-list-item-content {*/
+    /*display: -webkit-box;*/
+    /*display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    height: 100%;
+    padding-left: 48px;
+    -webkit-box-flex: 1;
+    flex: 1 1 0;
+}
+
+.availability-flight-info {*/
+    /*display: -webkit-box;*/
+    /*display: flex;
+    -webkit-box-flex: 2;
+    flex: 2;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+.flight-fare {
+    display: flex;
+    -webkit-box-flex: 1;
+    flex: 1;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+
+.price-container {
+    padding-top: 24px;
+    text-align: right;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    line-height: 1.33;
+    letter-spacing: -0.5px;
+}*/
+
+/*.card .cardbody .bb a:hover {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+
+.card .cardbody a:hover {
+    background-color: darkseagreen;
+    color: white;
+}*/

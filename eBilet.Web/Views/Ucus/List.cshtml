@@ -1,0 +1,26 @@
+﻿@model IEnumerable<eBilet.Entity.Flight>
+
+<div class="container">
+    @{
+        foreach (var item in Model)
+        {
+            <div class="card text-center mb-2">
+                <div class="card-header" style="font-size:x-large">
+                    <b>@item.DepartureDate</b>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title" style="font-size:x-large">
+                        <span style="float:left;margin-left:130px"><b>@item.WhereFrom</b></span>
+                        <span><b>&#129046;&#129046;&#129046;&#129046;&#129046;&#129046;&#129046;&#129046;&#129046;&#129046;&#129046;&#129046;&#129046;&#129046;&#129046;&#129046;&#129046;&#129046;&#129046;&#129046;</b></span>
+                        <span style="float:right;margin-right:130px;"><b>@item.ToWhere</b></span>
+                    </h5>
+                    <br />
+                    <a asp-action="Details" asp-controller="Ucus" class="btn btn-primary" asp-route-id="@item.Id" style="width:180px;font-size:x-large;">@item.Price $</a>
+                </div>
+                <div class="card-footer text-muted" style="font-size:x-large">
+                    <span><b>@item.Company</b></span>
+                </div>
+            </div>
+        }
+    }
+</div>
